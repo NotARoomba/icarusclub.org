@@ -11,9 +11,11 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@hackclub/theme": "^0.3.3",
+    "motion": "^12.23.12",
     "next": "15.5.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "react-fast-marquee": "^1.6.5",
     "theme-ui": "^0.17.2"
   },
   "devDependencies": {
