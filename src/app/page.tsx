@@ -85,12 +85,12 @@ export default function Home() {
             {/* <Box className="w-full h-1 bg-gradient-to-r from-cyan-400 to-orange-500 mt-6"></Box> */}
           </Box>
 
-          <Box className="flex flex-col lg:flex-row items-start w-full gap-12 lg:gap-20">
+          <Box className="flex flex-col lg:flex-row items-stretch w-full gap-12 lg:gap-20">
             {/* Left side - Text content */}
-            <Box className="text-white flex-1 lg:max-w-5xl h-full min-h-full">
+            <Box className="text-white w-full lg:w-1/2">
               <Box
                 backgroundColor="darker"
-                className="backdrop-blur-sm rounded-2xl p-8 md:p-12 border-2 border-dashed border-muted h-[400px] md:h-[500px] lg:h-[600px] flex items-center"
+                className="backdrop-blur-sm rounded-2xl p-8 md:p-12 border-2 border-dashed border-muted min-h-[300px] flex items-center"
               >
                 <Text className="text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-relaxed">
                   Somos{" "}
@@ -121,18 +121,16 @@ export default function Home() {
             </Box>
 
             {/* Right side - Leaders photo */}
-            <div className="flex justify-center items-center lg:justify-start lg:items-start mx-auto">
-              <Box className="relative group">
-                <div className="relative w-full max-w-md lg:max-w-none mx-auto lg:mx-0 h-[400px] md:h-[500px] lg:h-[600px] group-hover:scale-105 transition-transform duration-500">
-                  <Image
-                    src="/icarus/scrapyard_leaders.png"
-                    alt="Icarus Club Leaders"
-                    fill
-                    className="rounded-2xl shadow-2xl object-cover"
-                    priority
-                  />
-                </div>
-              </Box>
+            <div className="flex w-full lg:w-1/2 justify-center items-center lg:justify-end lg:items-start">
+              <div className="relative w-full h-full min-h-[300px] group-hover:scale-105 transition-transform duration-500">
+                <Image
+                  src="/icarus/scrapyard_leaders.png"
+                  alt="Icarus Club Leaders"
+                  fill
+                  className="rounded-2xl shadow-2xl object-cover"
+                  priority
+                />
+              </div>
             </div>
           </Box>
         </Box>
@@ -227,28 +225,24 @@ export default function Home() {
             {/* Bottom Right - Logos */}
             <Box className="flex flex-col items-center justify-center gap-6">
               {/* Scrapyard Logo */}
-              <Box className="flex  justify-center">
-                <div className="relative w-9/12 h-20">
-                  <Image
-                    src="/icarus/scrapyardlogo.png"
-                    alt="Scrapyard Barranquilla"
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-              </Box>
+              <div className="relative w-9/12 h-full min-h-20">
+                <Image
+                  src="/icarus/scrapyardlogo.png"
+                  alt="Scrapyard Barranquilla"
+                  fill
+                  className="object-contain"
+                />
+              </div>
 
               {/* NASA Space Apps Logo */}
-              <Box className="flex justify-center">
-                <div className="relative w-9/12 h-20">
-                  <Image
-                    src="/icarus/spaceappswhite.png"
-                    alt="NASA Space Apps Challenge"
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-              </Box>
+              <div className="relative w-9/12 h-full min-h-20">
+                <Image
+                  src="/icarus/spaceappswhite.png"
+                  alt="NASA Space Apps Challenge"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </Box>
           </Box>
         </Box>
@@ -366,6 +360,7 @@ export default function Home() {
               name="Juliana Taboada"
               role="Co-Leader"
               instagram="https://www.instagram.com/hubhop.bop"
+              email="julianatacas@gmail.com"
             />
 
             <ProfileCard
@@ -398,7 +393,7 @@ export default function Home() {
               name="Santiago Beltran"
               role="Jefe de Logística"
               github="https://github.com/sbeltranc"
-              email="santiago@hackclub.app"
+              email="sbeltranco08@gmail.com"
             />
 
             <ProfileCard
