@@ -5,11 +5,11 @@ import "@hackclub/theme/fonts/reg-ital-bold.css";
 export const metadata: Metadata = {
   title: "Icarus Club - Barranquilla, Colombia",
   description:
-    "Icarus Club is a technology club based in Barranquilla, Colombia, led by students who are part of Hack Club. Our objective is to get children from all over Colombia to participate and to show Barranquilla as the capital of technology for children and young people of the future.",
+    "Icarus Club es un club tecnológico con sede en Barranquilla, Colombia, liderado por estudiantes que forman parte de Hack Club. Nuestro objetivo es que niñas, niños y jóvenes de todo Colombia participen y mostrar a Barranquilla como la capital tecnológica para las futuras generaciones.",
   openGraph: {
     title: "Icarus Club - Barranquilla, Colombia",
     description:
-      "A technology club for young makers and coders in Barranquilla, Colombia",
+      "Un club tecnológico para jóvenes creadores y programadores en Barranquilla, Colombia",
     type: "website",
   },
 };
