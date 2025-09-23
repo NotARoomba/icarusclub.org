@@ -470,12 +470,13 @@ export default function Home() {
                 <Box className="flex justify-center">
                   <Button
                     variant="ctaLg"
-                    disabled
-                    aria-disabled={true}
-                    onClick={() => 0}
-                    className="text-lg sm:text-xl md:text-2xl lg:text-3xl py-4 md:py-5 lg:py-6 px-8 md:px-10 lg:px-12 rounded-full font-bold transition-all duration-300 opacity-50 cursor-not-allowed"
+                    onClick={() => {
+                      window.location.href =
+                        "https://dashboard.hackclub.com/join-club?code=8INYUEJL";
+                    }}
+                    className="text-lg sm:text-xl md:text-2xl lg:text-3xl py-4 md:py-5 lg:py-6 px-8 md:px-10 lg:px-12 rounded-full font-bold transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                   >
-                    El formulario abrirá pronto
+                    Abrir formulario
                   </Button>
                 </Box>
               </Box>
