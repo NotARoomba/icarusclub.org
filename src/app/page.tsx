@@ -251,7 +251,7 @@ export default function Home() {
       {/* Fourth Page - Partners Section */}
       <Box
         id="partners-section"
-        backgroundColor="Background"
+        backgroundColor="white"
         className="relative min-h-screen  flex items-start justify-start "
       >
         <Box className="w-full flex flex-col relative z-10 h-screen px-8 md:px-24 py-16">
