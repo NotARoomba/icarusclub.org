@@ -56,6 +56,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@theme {
+  --color-dd-blue: #CBE8F9;
+  --color-dd-dark-blue: #7FC7F0;
+  --color-dd-pink: #FFB9DC;
+  --color-dd-yellow: #FAEFCA;
+}
+
 /* Theme UI overrides */
 #__next {
   min-height: 100vh;

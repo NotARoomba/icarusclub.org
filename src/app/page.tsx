@@ -19,7 +19,7 @@ export default function Home() {
       <Box className="relative min-h-screen flex items-center justify-center text-white text-center px-4 overflow-hidden">
         {/* Background image */}
         <Image
-          src="/icarus/scrapyard_leaders_back.png"
+          src="/icarus/staff.png"
           alt="Icarus background"
           fill
           className="absolute inset-0 -z-10 h-full w-full object-cover"
@@ -29,8 +29,8 @@ export default function Home() {
         {/* Dark overlay for readability */}
         <Box className="absolute inset-0 -z-10 bg-black/60" />
 
-        <Box className="flex flex-col max-w-5xl translate-y-[1vh] md:translate-y-[2vh] lg:translate-y-[3vh]">
-          <Box className="flex items-center justify-center mb-4 md:mb-6 gap-x-6">
+        <Box className="flex flex-col max-w-5xl translate-y-[20vh]  lg:translate-y-[20vh]">
+          <Box className="flex flex-col-reverse lg:flex-row items-center justify-center mb-4 md:mb-6 gap-x-6">
             <Heading
               as="h1"
               className="font-extrabold tracking-tight leading-none text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mr-3 md:mr-6"
@@ -42,13 +42,24 @@ export default function Home() {
               alt="Icarus flag"
               width={128}
               height={128}
-              className="w-12 sm:w-16 md:w-24 lg:w-28 xl:w-32 h-auto transform -rotate-6 drop-shadow-xl"
+              className="w-20 md:w-24 lg:w-28 xl:w-32 h-auto transform -rotate-6 drop-shadow-xl"
             />
           </Box>
 
           <Box className="flex flex-col items-center gap-4 lg:-translate-y-6">
             <Text className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl opacity-95 mb-12 md:mb-16 lg:mb-20 font-semibold leading-relaxed whitespace-normal lg:whitespace-nowrap">
-              Un club tecnológico de estudiantes en Barranquilla, Colombia
+              Un club{" "}
+              <Text color="red" className="font-bold">
+                tecnológico
+              </Text>{" "}
+              de estudiantes en{" "}
+              <Text color="blue" className="font-bold">
+                Barranquilla
+              </Text>
+              ,{" "}
+              <Text color="yellow" className="font-bold">
+                Colombia
+              </Text>
             </Text>
 
             <Button
@@ -154,8 +165,41 @@ export default function Home() {
 
           {/* Main content - Bento Box Layout */}
           <Box className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-8">
+            <Box className="flex flex-1 justify-center items-center lg:col-span-2">
+              <div className="relative w-full h-[200px] md:h-[400px]">
+                <Image
+                  src="/icarus/daydream_barranquilla.jpg"
+                  alt="Daydream Barranquilla"
+                  fill
+                  className="rounded-2xl shadow-2xl object-cover"
+                />
+              </div>
+            </Box>
+            <Box className="text-white lg:col-span-1">
+              <Text className="text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+                Organizamos{" "}
+                <Text className="font-bold text-dd-dark-blue">
+                  Daydream Barranquilla
+                </Text>
+                , un hackathon de{" "}
+                <Text className="font-bold text-dd-pink">24 horas</Text> junto a
+                la Universidad Reformada y la Alcaldía de Barranquilla, donde
+                los estudiantes crearon{" "}
+                <Text className="font-bold text-dd-yellow">videojuegos</Text> en
+                un día. ¡Fue el{" "}
+                <Text className="font-bold text-dd-dark-blue">
+                  más grande de América
+                </Text>{" "}
+                y{" "}
+                <Text className="font-bold text-dd-pink">
+                  4to a nivel mundial
+                </Text>
+                !
+              </Text>
+            </Box>
+
             {/* Top Left - Hackathon Text */}
-            <Box className="text-white lg:col-span-2">
+            <Box className="text-white flex items-center lg:col-span-1 h-full order-2 lg:order-none">
               <Text className="text-xl md:text-2xl lg:text-3xl xl:text-4xl">
                 Hemos organizado otros hackathons como{" "}
                 <Text color="green" className="font-bold">
@@ -180,8 +224,8 @@ export default function Home() {
             </Box>
 
             {/* Top Right - Scrapyard Event Image */}
-            <Box className="flex flex-1 justify-center items-center">
-              <div className="relative w-full max-w-md h-[200px] md:h-[250px]">
+            <Box className="flex flex-1 justify-center items-center lg:col-span-2 order-1 lg:order-none">
+              <div className="relative w-full  h-[200px] md:h-[400px]">
                 <Image
                   src="/icarus/scrapyard_event.png"
                   alt="Scrapyard Event"
@@ -192,7 +236,7 @@ export default function Home() {
             </Box>
 
             {/* Bottom Left - NASA Space Apps Image */}
-            <Box className="flex justify-center">
+            <Box className="flex justify-center order-3">
               <div className="relative w-full max-w-md h-[200px] md:h-[250px]">
                 <Image
                   src="/icarus/nasa_space_apps.png"
@@ -204,7 +248,7 @@ export default function Home() {
             </Box>
 
             {/* Bottom Center - NASA Achievement Text */}
-            <Box className="text-white flex flex-col justify-center">
+            <Box className="text-white flex flex-col justify-center order-4">
               <Text className="text-xl md:text-2xl lg:text-3xl xl:text-4xl">
                 Además, fuimos{" "}
                 <Text color="blue" className="font-bold">
@@ -223,7 +267,16 @@ export default function Home() {
             </Box>
 
             {/* Bottom Right - Logos */}
-            <Box className="flex flex-col items-center justify-center gap-6">
+            <Box className="flex flex-col items-center justify-center gap-6 order-5">
+              {/* Daydream Logo */}
+              <div className="relative w-9/12 h-full min-h-20">
+                <Image
+                  src="/icarus/daydreamlogo.png"
+                  alt="Daydream Barranquilla"
+                  fill
+                  className="object-contain"
+                />
+              </div>
               {/* Scrapyard Logo */}
               <div className="relative w-9/12 h-full min-h-20">
                 <Image
