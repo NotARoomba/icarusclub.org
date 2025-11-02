@@ -525,7 +525,7 @@ export default function Home() {
                     variant="ctaLg"
                     onClick={() => {
                       window.location.href =
-                        "https://dashboard.hackclub.com/join-club?code=8INYUEJL";
+                        "https://dashboard.hackclub.com/join-club?code=5XGO5J09";
                     }}
                     className="text-lg sm:text-xl md:text-2xl lg:text-3xl py-4 md:py-5 lg:py-6 px-8 md:px-10 lg:px-12 rounded-full font-bold transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                   >
@@ -560,7 +560,7 @@ export default function Home() {
                     </Box>
                     <Box as="li" className="py-3">
                       <a
-                        href="https://dashboard.hackclub.com/join-club?code=8INYUEJL"
+                        href="https://dashboard.hackclub.com/join-club?code=5XGO5J09"
                         className="underline text-2xl md:text-3xl"
                         target="_blank"
                         rel="noopener noreferrer"
